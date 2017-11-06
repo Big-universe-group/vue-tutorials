@@ -9,6 +9,7 @@
 		<!--这是我们的View-->
 		<div id="app">
 			<p>{{ message }}</p>
+      <!-- v-model 双向绑定 -->
 			<input type="text" v-model="message"/>
 		</div>
 		
@@ -23,7 +24,9 @@
 		// 创建一个 Vue 实例或 "ViewModel"
 		// 它连接 View 与 Model
 		new Vue({
+      // 选项对象-el-指向View
 			el: '#app',
+      // 选项对象-data-指向Model
 			data: exampleData
 		})
 	</script>
